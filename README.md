@@ -92,11 +92,11 @@ git push https://<username>:<token>@github.com/<username>/<repositoryname>.git #
 ## Intallazione PortableGit
 Scaricare l'ultima versione di PortableGit: https://github.com/git-for-windows/git/releases/
 
-![PortableGit](PortableGit.PNG)
+![PortableGit](PortableGit.png)
 
 Eseguire il file exe scaricato.
 
-![exe](exe.PNG)
+![exe](exe.png "è in minuscolo a causa di un bug")
 
 Aprire il programma `git-bash` nella cartella di PortableGit appena creata.
 
