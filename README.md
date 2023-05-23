@@ -20,13 +20,14 @@ Scrivere codice in java che permetta:
 - creare anche un metodo per visualizzare tutti gli elementi all'interno
 
 ##  Spiegazione Codice Esecitazione
-1. il codice pemette di gestire una lista di interi pemettendo di inserire i dati tramite ```add```
+codice tramite una likedlist gestisce
+1. inserimento i dati tramite ```add```
 2. permette di eliminare il primo tramite ```rimuoviPrima```
 3. di visualizzare l'elenco dei dati tramite ```elenco```
 
 # Passaggi Esercitazione
 
-## 1. Creazione di un nuovo repository
+## 1. Creazione di un Nuovo Repository
 
 andare su (https://github.com/) e cliccare sul tasto NEW
 
@@ -48,12 +49,12 @@ andare sul desktop e creare una cartella
 ### Setup README.md
 1. creare un file di testo in modo similare a quello della cartella
 2. abilitare le estesioni dei file nella cartella
-![Foto_Estesione_file](estensionifile.PNG.jpg)
+![Foto_Estesione_file](estensionifile.PNG)
 3. rinominare il file dopo il .
 
     ![Foto_modifica_estensione](estesione.PNG)
 
-### Inizializzazione del Repository locale
+### Inizializzazione del Repository Locale
 1. aprire il programma git Bash crecandolo nella barra di ricerca e facendo doppio click su esso (nel caso non dovrebbe esseci andare alla voce "INSTALLAZIONE Github")
 2. eseguire il comando
 ```
@@ -67,13 +68,36 @@ git init
 ```
 ![foto_cd](gitinit.PNG)
 
-### Sicronizzazione dei repository
+## 3. Sicronizzazione dei Repository
 ```
 git add README.md  # Inserimento del file README.md nell'area di staging
 git commit -m "first commit"  # Creazione del primo commit, che serve a sincronizzare il repository locale con lo stage
 git branch -M main  # Creazione del branch main, da usare come default
 git remote add origin https://github.com/<username>/<repositoryname>  # Connessione del repository remoto al repository locale
-git push https://<username>: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@github.com/<username>/<repositoryname>.git #serve per sincornizzare il repository locale con quello remoto
+git push https://<username>:<token>@github.com/<username>/<repositoryname>.git #serve per sincornizzare il repository locale con quello remoto
 ```
 (se non si ha un token andara alla sezione "Creazione di un Token")
 
+## Installazione di github
+- aprire il seguente link https://github.com/settings/tokens
+- generare un token mediante `Generate new token (classic)`
+    ![Foto_token_creazione](creatoken.PNG)
+- confermare l'accesso inserendo la propria password, se richiesto
+- in `Note` inserire un messaggio come "token di accesso"
+- `Expiration`: "No expiration"
+- In `Select scopes` spuntare la casella accanto a `repo`, in modo tale da avere la situazione sottostante
+- generare il token e salvarlo in un file di testo
+![foto_token_impostazione](TokenImpo.PNG)
+
+## Intallazione PortableGit
+Scaricare l'ultima versione di PortableGit: https://github.com/git-for-windows/git/releases/
+
+![PortableGit](PortableGit.PNG)
+
+Eseguire il file exe scaricato.
+
+![exe](exe.PNG)
+
+Aprire il programma `git-bash` nella cartella di PortableGit appena creata.
+
+![git-bash](git-bash.PNG)
