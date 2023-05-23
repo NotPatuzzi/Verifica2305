@@ -89,7 +89,7 @@ git push https://<username>:<token>@github.com/<username>/<repositoryname>.git #
 - generare il token e salvarlo in un file di testo
 ![foto_token_impostazione](TokenImpo.PNG)
 
-## Intallazione PortableGit
+## Installazione PortableGit
 Scaricare l'ultima versione di PortableGit: https://github.com/git-for-windows/git/releases/
 
 ![PortableGit](PortableGit.png)
@@ -101,3 +101,35 @@ Eseguire il file exe scaricato.
 Aprire il programma `git-bash` nella cartella di PortableGit appena creata.
 
 ![git-bash](git-bash.PNG)
+
+
+## Comandi per i file .md
+### Aggiunta immagini
+Aggiungere l'immagine `img.jpg` al progetto ed inserirla nel testo con il seguente comando:
+```![](img.png)```
+
+### Inserire sezioni
+Le sezioni possono essere create inserendo un `#` prima del titolo della sezione. Si può modificare il tipo di sezione usando da uno a sei `#`. È importante separare i `#` dal titolo con uno spazio.
+
+### Inserire codice e citazioni
+Il codice può essere inserito delimitandolo con tre backtick ```.
+```
+questo è un esempio di comando
+```
+
+Le citazioni possono essere fatte aggiungendo `>` prima del testo.
+
+
+## Comandi della git Bash
+```
+cd ... # per cambiare cartella
+git add README.md  # Inserimento del file README.md nell'area di staging
+git add . # Inserimento di tutti i file nell'area di staging
+git commit -m "first commit"  # Creazione del primo commit, che serve a sincronizzare il repository locale con lo stage con anche un commento
+git branch -M main  # Creazione del branch main, da usare come default
+git remote add origin https://github.com/<username>/<repositoryname>  # Connessione del repository remoto al repository locale
+git push https://<username>:<token>@github.com/<username>/<repositoryname>.git #serve per sincornizzare il repository locale con quello remoto
+git push -u origin main  # Sincronizzazione del repository remoto con quello locale
+git config user.email "email" # per settare l'email
+git config user.user "username" # per settare l'username
+```
