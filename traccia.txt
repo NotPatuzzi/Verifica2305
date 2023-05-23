@@ -1,0 +1,2 @@
+creare una linked list per la gestione di inserimento e rimozione numeri
+- creare anche un metodo per visualizzare tutti gli elementi all'interno
